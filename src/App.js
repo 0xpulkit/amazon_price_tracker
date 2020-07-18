@@ -1,26 +1,26 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import './App.css';
+import Logo from './components/logo/logo';
+import Form from './components/form/form';
+
+
+class App extends Component {
+  render(){
+    return (
+      <div className="App">
+                  <Logo/>
+                  <Form/> {/* <br></br><br></br><br></br><br></br><br></br><br></br><br></br> */}
+                  
+                  <h1 className ='pv6 f5 m5 center white'>Developed with ❤ By Pulkit Mittal</h1>
+                  
+                
+                  
+      </div>
+    );
+
+    }
+
 }
 
 export default App;
